@@ -5,16 +5,11 @@ date: "November 4, 2016"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
-
 ## Package Installation
 
 First, we install the required packages. 
 
 ```{r}
-install.packages("leaflet")
 library(leaflet)
 ```
 
@@ -46,7 +41,7 @@ sfparkSites <- c(
 )
 ```
 
-### My Map
+### Creating SF Parks Map
 
 ```{r, echo=FALSE}
 sfpark_map <- df %>% 
