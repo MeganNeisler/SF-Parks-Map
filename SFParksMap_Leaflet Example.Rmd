@@ -1,7 +1,7 @@
 ---
 title: "San Francisco Parks with Great Views"
 author: "MNeisler"
-date: "November 6, 2016"
+date: "November 4, 2016"
 output: html_document
 ---
 
@@ -39,7 +39,6 @@ sfparkSites <- c(
    "<a href='http://sfrecpark.org/destination/grand-view-park/'>Grand View Park</a>"
 )
 ```
-
 
 ```{r, echo=FALSE}
 sfpark_map <- df %>% 
