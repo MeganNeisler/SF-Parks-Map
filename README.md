@@ -1,4 +1,4 @@
-# San Francisco Interative Parks Map
+# San Francisco Interactive Parks Map
 
 An interactive map of some popular parks in San Francisco with view of the city. The map includes makrers indicating each park's location, which the user can click to access the park's website.
 
@@ -13,11 +13,13 @@ Once installed, you can use this package within R markdown documents or shiny ap
 
 ## Data
 
-A dataframe was created using the latitudes and longitudes of San Francisco city parks collected from Google Maps. I also created a list of websites to the parks.
+* df: A dataframe of the latitudes and longitudes of San Francisco city parks collected from Google Maps. 
+* sfparkIcon: SF park logo obtained from the [San Francisco Recreation and Park Website](http://sfrecpark.org/wp-content/uploads/SF_RecPark_Logo4.png)
+* sfparkSites: A list of the websites for each park.
 
 ## Example
 
-The interative map includes tiles to mark the park locations and map markers with links to each park website.
+Once you install the leaflet package you can add various layers to the map.  This interative map includes tiles to mark the park locations and map markers with links to each park website. 
 ```
 sfpark_map <- df %>% 
   leaflet() %>%
